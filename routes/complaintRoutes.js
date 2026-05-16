@@ -13,7 +13,6 @@ const router = express.Router();
 
 // 👇 add image upload here
 router.post("/", upload.single("image"), createComplaint);
-
 router.get("/", getComplaints);
 router.get("/:id", getComplaintById);
 router.put("/:id", updateComplaint);
