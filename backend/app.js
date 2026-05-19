@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ROUTES 🔥
+// ROUTES 
 app.use("/api/complaints", complaintRoutes);
 app.use("/api/auth", authRoutes);
 
